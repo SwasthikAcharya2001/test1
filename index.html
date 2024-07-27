@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMG mIOT</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(0deg, #ffff 0%, rgb(201, 195, 240) 100%);
+            height: 100%;
+            color: black;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 600px;
+        }
+        .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            color: black;
+            background: rgba(10, 8, 8, 0.1);
+            border: 2px solid  rgba(10, 8, 8, 0.1);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+            font-size: 1.5rem;
+        }
+        
+        .smart-home {
+           
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: float 6s ease-in-out infinite;
+            padding: 10px;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            p { font-size: 1rem; }
+            .buttons { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="smart-home">
+            <img height="100px" src="./AMGIOT Logo.png" id="imglogo" />
+        </div>
+        <h1>m-IOT CNC</h1>
+        <p>DownLoad Now.</p>
+        <div class="buttons">
+            <a href="https://apps.apple.com/lu/app/amg-miot/id6473735107"  class="button" target="_blank">
+                <img alt="svgImg" height="30px" wi src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCI+CjxwYXRoIGQ9Ik0gNDQuNTI3MzQ0IDM0Ljc1IEMgNDMuNDQ5MjE5IDM3LjE0NDUzMSA0Mi45Mjk2ODggMzguMjE0ODQ0IDQxLjU0Mjk2OSA0MC4zMjgxMjUgQyAzOS42MDE1NjMgNDMuMjgxMjUgMzYuODYzMjgxIDQ2Ljk2ODc1IDMzLjQ4MDQ2OSA0Ni45OTIxODggQyAzMC40Njg3NSA0Ny4wMTk1MzEgMjkuNjkxNDA2IDQ1LjAyNzM0NCAyNS42MDE1NjMgNDUuMDYyNSBDIDIxLjUxNTYyNSA0NS4wODIwMzEgMjAuNjY0MDYzIDQ3LjAzMTI1IDE3LjY0ODQzOCA0NyBDIDE0LjI2MTcxOSA0Ni45Njg3NSAxMS42NzE4NzUgNDMuNjQ4NDM4IDkuNzMwNDY5IDQwLjY5OTIxOSBDIDQuMzAwNzgxIDMyLjQyOTY4OCAzLjcyNjU2MyAyMi43MzQzNzUgNy4wODIwMzEgMTcuNTc4MTI1IEMgOS40NTcwMzEgMTMuOTIxODc1IDEzLjIxMDkzOCAxMS43NzM0MzggMTYuNzM4MjgxIDExLjc3MzQzOCBDIDIwLjMzMjAzMSAxMS43NzM0MzggMjIuNTg5ODQ0IDEzLjc0NjA5NCAyNS41NTg1OTQgMTMuNzQ2MDk0IEMgMjguNDQxNDA2IDEzLjc0NjA5NCAzMC4xOTUzMTMgMTEuNzY5NTMxIDM0LjM1MTU2MyAxMS43Njk1MzEgQyAzNy40OTIxODggMTEuNzY5NTMxIDQwLjgxMjUgMTMuNDgwNDY5IDQzLjE4NzUgMTYuNDMzNTk0IEMgMzUuNDIxODc1IDIwLjY5MTQwNiAzNi42ODM1OTQgMzEuNzgxMjUgNDQuNTI3MzQ0IDM0Ljc1IFogTSAzMS4xOTUzMTMgOC40Njg3NSBDIDMyLjcwNzAzMSA2LjUyNzM0NCAzMy44NTU0NjkgMy43ODkwNjMgMzMuNDM3NSAxIEMgMzAuOTcyNjU2IDEuMTY3OTY5IDI4LjA4OTg0NCAyLjc0MjE4OCAyNi40MDYyNSA0Ljc4MTI1IEMgMjQuODc4OTA2IDYuNjQwNjI1IDIzLjYxMzI4MSA5LjM5ODQzOCAyNC4xMDU0NjkgMTIuMDY2NDA2IEMgMjYuNzk2ODc1IDEyLjE1MjM0NCAyOS41ODIwMzEgMTAuNTQ2ODc1IDMxLjE5NTMxMyA4LjQ2ODc1IFoiPjwvcGF0aD4KPC9zdmc+"/>App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.AmiT.amgiot_super_app" class="button" target="_blank">
+                <img alt="svgImg" height="30px" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxsaW5lYXJHcmFkaWVudCBpZD0iakZkRy03Nl9zZUlFdmYtaGJqU3NhYV9yWnduUmRKeVlxUmlfZ3IxIiB4MT0iMTY4OC40ODkiIHgyPSIxNjg1LjQ2OSIgeTE9Ii04ODMuMDAzIiB5Mj0iLTg4MS40NDMiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMTEuNjQgMCAwIDIyLjU1IC0xOTYxNS4zMiAxOTkwNC45MjQpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDQ3ZWQ2Ij48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNTBlNmZmIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2pGZEctNzZfc2VJRXZmLWhialNzYWFfclp3blJkSnlZcVJpX2dyMSkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuODA5LDQuNjA4Yy0wLjQ1LDAuNDgzLTAuNzA4LDEuMjI3LTAuNzA4LDIuMTk0CXYzNC4zODRjMCwwLjk2NywwLjI1OCwxLjcxMSwwLjcyNSwyLjE3N2wwLjEyMiwwLjEwM0wyNy4yMTQsMjQuMnYtMC40MzNMNy45MzEsNC41MDVMNy44MDksNC42MDh6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48bGluZWFyR3JhZGllbnQgaWQ9ImpGZEctNzZfc2VJRXZmLWhialNzYWJfclp3blJkSnlZcVJpX2dyMiIgeDE9IjE2NDUuMjg2IiB4Mj0iMTY0Mi45MjkiIHkxPSItODk3LjA1NSIgeTI9Ii04OTcuMDU1IiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDkuMTQ1IDAgMCA3LjcgLTE1MDAxLjkzOCA2OTMxLjMxNikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmRhMWMiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZWI3MDUiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjxwYXRoIGZpbGw9InVybCgjakZkRy03Nl9zZUlFdmYtaGJqU3NhYl9yWnduUmRKeVlxUmlfZ3IyKSIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMzMuNjIzLDMwLjY0N2wtNi40MjYtNi40Mjh2LTAuNDVsNi40MjgtNi40MjgJbDAuMTM5LDAuMDg2bDcuNjAzLDQuMzIxYzIuMTc3LDEuMjI3LDIuMTc3LDMuMjQ5LDAsNC40OTNsLTcuNjAzLDQuMzIxQzMzLjc2MiwzMC41NjEsMzMuNjIzLDMwLjY0NywzMy42MjMsMzAuNjQ3eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PGxpbmVhckdyYWRpZW50IGlkPSJqRmRHLTc2X3NlSUV2Zi1oYmpTc2FjX3Jad25SZEp5WXFSaV9ncjMiIHgxPSIxNzIyLjk3OCIgeDI9IjE3MjAuNjIyIiB5MT0iLTg4OS40MTIiIHkyPSItODg2LjM1NSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxNS4wMiAwIDAgMTEuNTc3NSAtMjU4NDguOTQzIDEwMzI0LjczKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2Q5NDE0ZiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhjMTkzZiI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBhdGggZmlsbD0idXJsKCNqRmRHLTc2X3NlSUV2Zi1oYmpTc2FjX3Jad25SZEp5WXFSaV9ncjMpIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0zMy43NjIsMzAuNTYxbC02LjU2NS02LjU2N0w3LjgwOSw0My4zODIJYzAuNzA4LDAuNzYxLDEuOSwwLjg0NywzLjIzMiwwLjEwM0wzMy43NjIsMzAuNTYxIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD48bGluZWFyR3JhZGllbnQgaWQ9ImpGZEctNzZfc2VJRXZmLWhialNzYWRfclp3blJkSnlZcVJpX2dyNCIgeDE9IjE3MjEuMTYzIiB4Mj0iMTcyMi4yMTUiIHkxPSItODkxLjM5IiB5Mj0iLTg5MC4wMjQiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMTUuMDIgMCAwIDExLjU3MTUgLTI1ODQ4Ljk0MyAxMDMwNy44ODYpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzNjNDgxIj48L3N0b3A+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjFlM2E3Ij48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48cGF0aCBmaWxsPSJ1cmwoI2pGZEctNzZfc2VJRXZmLWhialNzYWRfclp3blJkSnlZcVJpX2dyNCkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTMzLjc2MiwxNy40MjlMMTEuMDQxLDQuNTIyCWMtMS4zMy0wLjc2MS0yLjUyNC0wLjY1OC0zLjIzMiwwLjEwM2wxOS4zODYsMTkuMzY5TDMzLjc2MiwxNy40Mjl6IiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjwvcGF0aD4KPC9zdmc+"/> Google Play
+            </a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const buttons = document.querySelectorAll('.button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseover', () => {
+                    button.style.transform = `translateY(-3px) rotate(${Math.random() * 2 - 1}deg)`;
+                });
+                button.addEventListener('mouseout', () => {
+                    button.style.transform = 'translateY(0) rotate(0deg)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
